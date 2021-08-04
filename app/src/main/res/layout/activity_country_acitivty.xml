@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#0F0F25"
+    android:layout_height="match_parent"
+    tools:context=".views.CountryAcitivty">
+
+   <EditText
+       android:layout_margin="20dp"
+       android:layout_width="match_parent"
+       android:drawablePadding="10dp"
+       android:paddingStart="10dp"
+       android:layout_height="50dp"
+       android:hint="search"
+       android:drawableStart="@drawable/ic_baseline_search_24"
+       android:id="@+id/searchCountry"
+       android:background="@drawable/search_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tvList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_item"/>
+
+</LinearLayout>
